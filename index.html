@@ -1,12 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Luxe Auto</title>
+    <link rel="shortcut icon" href="image\logo.png" />
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Bonjour le monde!</h1></h1>
-    <p>Voici ma première page web.</p>
+    <header>
+        <h1>Bienvenue chez Luxe Auto</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">À propos</a></li>
+                <li><a href="#models">Nos Modèles</a></li>
+                <li><a href="#gallery">Galerie</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="about">
+        <h2>À propos de Luxe Auto</h2>
+        <p>Nous proposons une sélection exclusive de voitures de luxe telles que Lamborghini et Ferrari.</p>
+    </section>
+    
+    <section id="models">
+        <h2>Nos Modèles</h2>
+        <div class="model">Lamborghini Aventador</div>
+        <div class="model">Ferrari SF90 Stradale</div>
+        <div class="model">Porsche 911 Turbo S</div>
+    </section>
+    
+    <section id="gallery">
+        <h2>Galerie</h2>
+        <p>Découvrez nos modèles en images.</p>
+        <img src="image\aventador2.webp" alt="Description de l'image">
+        <img src="image\Ferrari SF90.webp" alt="Description de l'image">
+        <img src="image\porsche 911 turbo s.webp" alt="Description de l'image">
+    </section>
+    
+    <section id="contact">
+        <h2>Contactez-nous</h2>
+        <form>
+            <input type="text" name="name" placeholder="Votre nom" required>
+            <input type="email" name="email" placeholder="Votre email" required>
+            <textarea name="message" placeholder="Votre message" required></textarea>
+            <button type="submit">Envoyer</button>
+        </form>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 Luxe Auto. Tous droits réservés.</p>
+    </footer>
 </body>
 </html>
