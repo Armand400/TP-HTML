@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
           .then(data => {
               const temp = data.current.temperature_2m;
               const wind = data.current.wind_speed_10m;
-              const precipitation = data.current.precipitation || 0; // Si pas de précipitation, afficher 0
+              const precipitation = data.current.precipitation || 0;
 
               circuitElement.querySelector(".temperature").textContent = temp;
               circuitElement.querySelector(".wind-speed").textContent = wind;
