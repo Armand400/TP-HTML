@@ -6,6 +6,7 @@
     <title>Luxe Auto</title>
     <link rel="shortcut icon" href="image\logo.png" />
     <link rel="stylesheet" href="styles.css">
+    <script defer src="scriptmeteo.js"></script>
 </head>
 <body>
     <!-- Header avec logo et titre -->
@@ -22,6 +23,7 @@
             <li><a href="#about">À propos</a></li>
             <li><a href="#model">Nos Modèles</a></li>
             <li><a href="#contact">Contact</a></li>
+            <li><a href="#circuit">réservation circuit</a></li>
         </ul>
     </nav>
     
@@ -30,6 +32,7 @@
         <p>Nous proposons une sélection exclusive de voitures de luxe telles que Lamborghini et Ferrari.</p>
     </section>
     
+    <!-- model -->
     <section id="model">
         <div class="gallery-container">
             <div class="model">
@@ -90,7 +93,57 @@
             </div>
         </div>
     </section>
+
+    <!-- circuit -->
+    <section id="circuit">
+        <h2>réservation circuit</h2>
+        <div class="container-circuits">
+          <div class="models-circuits" data-lat="47.9492" data-lon="0.2218">
+            <img src="image/lemans.webp" alt="Le Mans">
+            <h2>Le Mans</h2>
+            <p>🌡 Temp: <span class="temperature">--</span>°C</p>
+            <p>💨 Vent: <span class="wind-speed">--</span> km/h</p>
+            <p>🌧 Précipitations: <span class="precipitation">--</span>%</p>
+            <div class="btn-1">
+                réserver
+            </div>
+          </div>
+          <div class="models-circuits" data-lat="47.3220" data-lon="5.0368">
+            <img src="image/circuitdedijon.webp" alt="Circuit de Dijon">
+            <h2>Circuit de Dijon</h2>
+            <p>🌡 Temp: <span class="temperature">--</span>°C</p>
+            <p>💨 Vent: <span class="wind-speed">--</span> km/h</p>
+            <p>🌧 Précipitations: <span class="precipitation">--</span>%</p>
+            <div class="btn-1">
+                réserver
+            </div>
+          </div>
+
+          <div class="models-circuits" data-lat="46.8642" data-lon="3.1631">
+            <img src="image/circuitdemagnycours.webp" alt="Circuit de Magny-Cours">
+            <h2>Circuit de Magny-Cours</h2>
+            <p>🌡 Temp: <span class="temperature">--</span>°C</p>
+            <p>💨 Vent: <span class="wind-speed">--</span> km/h</p>
+            <p>🌧 Précipitations: <span class="precipitation">--</span>%</p>
+            <div class="btn-1">
+                réserver
+            </div>
+          </div>
+
+          <div class="models-circuits" data-lat="43.2529" data-lon="5.7915">
+            <img src="image/circuitpaulricard.webp" alt="Circuit Paul Ricard">
+            <h2>Circuit Paul Ricard</h2>
+            <p>🌡 Temp: <span class="temperature">--</span>°C</p>
+            <p>💨 Vent: <span class="wind-speed">--</span> km/h</p>
+            <p>🌧 Précipitations: <span class="precipitation">--</span>%</p>
+            <div class="btn-1">
+                réserver
+            </div>
+          </div>
+        </div>
+    </section>
     
+    <!-- contact -->
     <section id="contact">
         <h2>Contactez-nous</h2>
         <form>
