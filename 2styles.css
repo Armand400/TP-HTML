@@ -118,6 +118,13 @@ nav ul li a {
         justify-content: center;
     }
 }
+@media screen and (max-width: 720px) {
+    .models-circuits {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
 .models-circuits {
     display: grid;
     max-width: 300px;
