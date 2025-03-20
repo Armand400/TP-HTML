@@ -103,9 +103,22 @@ nav ul li a {
 /* circuits */
 .container-circuits {
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: auto auto auto auto;
     justify-content: center;
     gap: 40px;
+}
+@media screen and (max-width: 1080px) {
+    .container-circuits {
+        grid-template-columns: repeat(2, minmax(250px, 1fr)); 
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .container-circuits {
+        grid-template-columns: repeat(1, minmax(250px, 1fr)); 
+        justify-content: center;
+    }
 }
 .models-circuits {
     display: grid;
@@ -162,13 +175,14 @@ nav ul li a {
   
   .btn-1:hover:before {
     left:95%;
+    background : #00aaff;
   }
 /* Formulaire de contact */
 form {
     display: flex;
     flex-direction: column;
     max-width: 400px;
-    margin: 0 auto;
+    margin: auto;
 }
 
 form input, form textarea {
