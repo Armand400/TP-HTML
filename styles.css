@@ -10,20 +10,18 @@ body {
 
 /* Header */
 header {
-    background: #000;
+    background: #0c0c0c;
     padding: 65px;
-    text-align: center;
 }
 
 .header-container {
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 20px;
+    gap: 250px;
 }
 
 .logo {
-    width: 80px;
+    width: 150px;
     height: auto;
 }
 
@@ -37,7 +35,7 @@ nav {
     position: fixed;
     top: 0;
     width: 100%;
-    background: #111;
+    background: #0c0c0c;
     padding: 15px 0;
     text-align: center;
     z-index: 1000;
@@ -71,7 +69,7 @@ nav ul li a {
 }
 .model {
     max-width: 300px;
-    background: #111;
+    background: #0c0c0c;
     padding: 25px;
     border-radius: 15px;
     box-shadow: 0 0 15px #f8b40080;
@@ -123,7 +121,7 @@ nav ul li a {
 .models-circuits {
     display: grid;
     max-width: 300px;
-    background: #111;
+    background: #0c0c0c;
     padding: 25px;
     border-radius: 15px;
     box-shadow: 0 0 15px rgba(248, 180, 0, 0.5);
@@ -158,6 +156,8 @@ nav ul li a {
     position:relative;
     overflow:hidden;
     margin: 0 20px;
+    text-decoration: none;
+    color: #f8b400;
   }
   
   .btn-1:before {
@@ -212,8 +212,78 @@ form button:hover {
 
 /* Footer */
 footer {
-    background: #141414;
+    background: #0c0c0c;
     text-align: center;
     padding: 20px;
     margin-top: 20px;
 }
+
+/* page voiture */
+/* Bouton Retour */
+.back-btn {
+    display: inline-block;
+    padding: 10px 15px;
+    background: #222;
+    color: #f8b400;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 20px;
+}
+
+/* Section voiture */
+.voiture-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding: 50px;
+}
+
+.voiture-image img {
+    width: 500px;
+    border-radius: 10px;
+}
+
+.voiture-info {
+    max-width: 400px;
+}
+
+.voiture-info h2, .voiture-info h3 {
+    color: #f8b400;
+}
+
+.voiture-info ul {
+    list-style: none;
+    padding: 0;
+}
+
+.voiture-info ul li {
+    margin: 10px 0;
+    font-size: 1.1em;
+}
+
+/* Galerie */
+.voiture-galerie {
+    text-align: center;
+    padding: 50px;
+}
+
+.galerie {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.galerie img {
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.galerie img:hover {
+    transform: scale(2.5);
+}
+
