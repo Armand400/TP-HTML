@@ -17,7 +17,7 @@ header {
 .header-container {
     display: flex;
     align-items: center;
-    gap: 250px;
+    gap: 20%;
 }
 
 .logo {
@@ -118,13 +118,6 @@ nav ul li a {
         justify-content: center;
     }
 }
-@media screen and (max-width: 720px) {
-    .models-circuits {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-}
 .models-circuits {
     display: grid;
     max-width: 300px;
@@ -190,6 +183,20 @@ form {
     flex-direction: column;
     max-width: 400px;
     margin: auto;
+}
+form textarea{
+    resize: vertical;
+    width: 95%;
+    max-height: 200px;
+    
+}
+
+/* Formulaire de contact pour la résolution téléphone*/
+@media screen and (max-width: 720px) {
+    .container-circuits {
+        max-width: 300px;
+        justify-content: center;
+    }
 }
 
 form input, form textarea {
